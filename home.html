@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehandi Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div id="preview">
+
+            <!-- Navbar -->
+
+            <nav>
+                <h2 class="logo">MS Creations</h2>
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <ul class="navLinks" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hero -->
+            <section id="home" class="hero">
+                <div class="hero-text">
+                    <h1>Professional <span>Mehandi Designs</span></h1>
+                    <h1>For Weddings & Festivals</h1>
+                    <h2>Get the Perfect Henna for your Special Day</h2>
+
+                    <button onclick="alert('Contact Coming Soon')">Contact Now</button>
+                </div>
+                <!-- <img src="img3.jpeg"> -->
+            </section>
+
+            <!-- About -->
+            <section id="about" class="about">
+                <div class="about-container">
+                    <img src="my pic.jpeg" alt="profile">
+
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>
+                            Welcome to my Mehandi World I am a Professional Henna artist with years of experience
+                            in creating Beautiful and intricle Mehandi designs.
+                        </p>
+
+                        <ul style="margin-left: 1em;">
+                            <li> Bridal Mehandi</li>
+                            <li> Arabic Mehandi</li>
+                            <li> Traditional Mehandi</li>
+                            <li> Custom Mehandi</li>
+                            <li> Mordern Mehandi</li>
+                            <li> Festival Mehandi</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Features -->
+            <section id="Services" class="features">
+                <div class="heading">
+                    <h1>Our Features</h1>
+                </div>
+
+                <div class="feature-container">
+
+                    <div class="feature-container">
+
+                        <div class="card">
+                            <img src="img1.jpg">
+                            <h3>Bridal Mehndi</h3>
+                            <p>Elegant wedding designs</p>
+                        </div>
+
+                        <div class="card">
+                            <img src=" festival mehandi.jpeg">
+                            <h3>Festival Mehndi</h3>
+                            <p>Beautiful festive styles</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="home service.jpeg">
+                            <h3>Home Service</h3>
+                            <p>Service at your doorstep</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="sticker mehandi (1).jpeg">
+                            <h3>Custom Design</h3>
+                            <p>Designs as per your choice</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="trending.jpeg">
+                            <h3>Trending Mehandi</h3>
+                            <p>Latest stylish patterns</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="simple mehandi.jpeg">
+                            <h3>Simple Design</h3>
+                            <p>Light and beautiful mehndi designs for a simple style</p>
+                        </div>
+
+                    </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="Contact" class="contact">
+                <div class="top">
+                    <h3>Contact</h3>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="calling.png" alt="call" width="50px">
+                        <span>
+                            <a href="#" onclick="makeCall()">Call: +91 7067374279</a>
+                        </span>
+                    </div>
+
+                    <div class="contact-item" style="margin-top:0.10em;">
+                        <img src="email.png" alt="email" width="50px">
+                        <span>
+                            <a href="mailto:madhuri1512sahu@gmail.com">Email: madhuri1512sahu@gmail.com</a>
+                        </span>
+                    </div>
+                    <button onclick="whatsapp()">
+                        <i class="ri-whatsapp-line"></i>
+                        Message on WhatsApp</button>
+                </div>
+
+                <div class="contact-form">
+                    <input type="text" id="name" placeholder="Your Name">
+                    <textarea id="msg" placeholder="Your Message"></textarea>
+                    <button onclick="sendMsg()">Send</button>
+                    <p id="response"></p>
+                </div>
+            </section>
+
+            <footer>
+                <p>© 2026 MS Creations</p>
+            </footer>
+        </div>
+
+        <script src="script.js" defer></script>
+
+        <script>
+            function toggleMenu() {
+                document.getElementById("navLinks").classList.toggle("show");
+            }
+        </script>
+
+</body>
+
+</html>
